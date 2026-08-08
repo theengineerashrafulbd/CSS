@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid Layout part 2</title>
+
+        <style>
+
+            .hr-style{               /* এটা hr কে bold করে */
+                height: 3px;
+                background-color: black;
+                border: none;
+           }
+
+            .section2{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto;
+            }
+
+            .section2:hover{
+                box-shadow: 5px 5px 5px black;
+            }
+
+            .section2 > div{
+                background-color: burlywood;
+                border: 1px solid black;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            .header{
+                grid-column: 1 / 7;
+            }
+
+            .menu{
+                grid-column: 1 / 2;
+                grid-row: 2 / 4;
+                
+            }
+
+            .main{
+                grid-column: 2 / 6;
+            }
+
+            .abide{
+                grid-column: 6 / 7;
+            }
+
+            .footer{
+                grid-column: 1 / 7;
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <div class="section2">
+
+            <div class="header">
+                Header
+            </div>
+
+            <div class="menu">
+                Menu
+            </div>
+
+            <div class="main">
+                Main
+            </div>
+
+            <div class="aside">
+                Aside
+            </div>
+
+            <div class="footer">
+                Footer
+            </div>
+
+        </div> 
+
+    </body>
+</html>

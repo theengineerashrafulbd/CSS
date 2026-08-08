@@ -1,0 +1,164 @@
+<!DOCType html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Pseudo Class and Element </title>
+		
+		<style>
+		
+			body{
+				margin:30px;
+			}
+		
+			a:hover{
+				color:green;
+			}
+			
+			a.my-link:hover{
+				color:red;
+			}
+			
+			input{
+				padding:10px;
+				font-size: 20px;
+				width: 150px;
+			}
+			
+			input:hover{
+				background-color:#CFE6F0;
+			}
+			
+			input:focus{
+				background-color:yellow;
+			}
+			
+			table, tr, td, th{
+				border: 2px solid black;
+				border-collapse:collapse;
+				text-align:center;
+				height:25px;
+				width:200px;
+			}
+			
+			tr:nth-child(odd){
+				background-color:brown;
+			}
+			
+			tr:nth-child(even){
+				background-color:yellow;
+			}
+			
+			/* End of Pseudo Class */
+			
+			
+			p:hover{
+				color:brown;
+			}
+			
+			p::first-letter{
+				color:coral;
+				font-size:1.5rem;
+			}
+			
+			.demo1::after{
+				content:"**************************"
+			}
+			
+			.demo2:hover{
+				background-color:black;
+				color:white;
+			}
+			
+			p:first-child{
+				background-color:pink;
+				color:blue;
+			}
+			
+			p:nth-child(3){
+				background-color:#E8E8FF;
+				color:#D1A06D;
+			}
+			
+			li:nth-child(odd){
+				background-color:black;
+				color:pink;
+			}
+			
+			::selection{
+				color:brown;
+				background-color:#000;
+			}
+		
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<b> Pseudo Class: </b> </br> </br>
+	
+		<input type="text" placeholder="Enter your name"> </br> </br>
+		
+		<a href="#"> Tutorial </a>	</br> 
+		<a class="my-link" href="#"> Home </a> </br> </br>
+		
+		<table>
+			<tr>
+				<th> Name </th>
+				<th> Age </th>
+				<th> Education </th>
+			</tr>
+			
+			<tr>
+				<td> Choya </td>
+				<td> 22 </td>
+				<td> CSE </td>
+			</tr>
+			
+			<tr>
+				<td> Samia </td>
+				<td> 16 </td>
+				<td> Nine </td>
+			</tr>
+			
+			<tr>
+				<td> Nilima </td>
+				<td> 27 </td>
+				<td> Civil </td>
+			</tr>
+			
+		</table>
+		
+		<hr>
+		
+		<b> Pseudo Element: </b> </br> 
+		
+		<p class="demo1"> I am a Computer Science and Engineering (CSE) student at City University with a strong passion for technology, software development, and artificial intelligence. I enjoy learning new programming languages, building web applications, and solving real-world problems through technology. I am continuously improving my technical skills while working on personal projects and exploring innovative ideas to grow as a future software engineer. </p>
+		<hr>
+		
+		 <div class="demo2">
+		 
+			<p> Artificial Intelligence (AI) is a branch of computer science that enables machines to perform tasks that normally require human intelligence. It can learn from data, recognize patterns, solve problems, and make decisions. </p> 
+			
+			<p> Artificial Intelligence (AI) is technology that enables computers to learn, think, and solve problems like humans. </p>
+			
+			<p> AI is the simulation of human intelligence in machines that can perform tasks such as learning, reasoning, and decision-making. </p>
+			
+			<p> Artificial Intelligence helps computers analyze data, recognize patterns, and make smart decisions automatically. </p>
+			
+			<p> Artificial Intelligence (AI) allows machines to understand, learn, and perform tasks efficiently with minimal human intervention. </p>
+			
+		 </div>
+		 
+		 <ul>
+			<li> CSE </li>
+			<li> Civil </li>
+			<li> EEE </li>
+			<li> English </li>
+		 </ul>
+		
+	</body>
+
+</html>

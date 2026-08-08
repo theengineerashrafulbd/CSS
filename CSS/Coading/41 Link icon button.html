@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Linkable Icon Button</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 20px;
+            margin: 10px;
+
+            background-color: #333;
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 5px;
+
+            font-size: 20px;
+
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        .button i {
+            margin-right: 8px;
+        }
+
+        .facebook {
+            background-color: #1877f2;
+        }
+
+        .youtube {
+            background-color: #ff0000;
+        }
+
+        .github {
+            background-color: #24292e;
+        }
+
+        .facebook:hover {
+            background-color: #0d5dcc;
+        }
+
+        .youtube:hover {
+            background-color: #cc0000;
+        }
+
+        .github:hover {
+            background-color: #000000;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Linkable Icon Button</h1>
+
+    <a href="https://www.facebook.com/"
+       target="_blank"
+       class="button facebook">
+
+        <i class="fa-brands fa-facebook"></i>
+        Facebook
+
+    </a>
+
+
+    <a href="https://www.youtube.com/"
+       target="_blank"
+       class="button youtube">
+
+        <i class="fa-brands fa-youtube"></i>
+        YouTube
+
+    </a>
+
+
+    <a href="https://github.com/"
+       target="_blank"
+       class="button github">
+
+        <i class="fa-brands fa-github"></i>
+        GitHub
+
+    </a>
+
+</body>
+
+</html>

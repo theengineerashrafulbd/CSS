@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> CSS Card </title>
+        
+        <style>
+            /*-----------------------
+              Card Cobtainer started
+              ------------------------*/
+            .card-container{
+                box-sizing: border-box;
+                display: flex;
+                background-color: green;
+                justify-content: center;  /*for more Container*/
+            }
+
+
+            /*-------------------
+              Card 1 started
+              ---------------------*/
+            .card1{
+                width: 300px;
+                margin: 10px;
+                box-sizing: border-box;
+                box-shadow: 4px 4px 4px black;
+            }
+
+            .card-image{
+                width: 100%;
+            }
+
+            .card-body{
+                padding: 4px;
+                background-color: burlywood;
+            }
+
+            .card-title{
+                font-size: 20px;
+                text-align: center;
+                color: red;
+                font-weight: bold;
+              /*  font-style: italic; */
+            }
+
+            .card-des{
+                padding: 5px;
+                text-align: justify;
+                color: white;
+                background-color: gray;
+                line-height: 1.3;
+            }
+
+            .card:hover{
+                box-shadow: 20px 20px 20px black;
+            }
+
+
+            /*-------------------
+              Card 2 started
+              ---------------------*/
+
+              .card2{
+                width: 300px;
+                margin: 10px;
+                box-sizing: border-box;
+                box-shadow: 4px 4px 4px black;
+            }
+
+        </style>
+
+    </head>
+
+
+    <body>
+
+        <div class="card-container">
+
+
+            <! First card Started ....>
+
+            <div class="card1">
+
+                <img class="card-image" src="card-image.jpeg">
+
+                <div class="card-body">
+                    <div class="card-title">
+                        Web Developer
+                    </div>
+                </div>
+
+                <div class="card-des">
+                    <p>Saaj Ghor Fashion is a modern Bangladeshi fashion brand dedicated to providing stylish, comfortable, and affordable clothing for people of all ages. Our mission is to bring together quality, elegance, and affordability so that every customer can enjoy fashionable outfits without exceeding their budget. We carefully select our collections to ensure premium fabrics, attractive designs, and excellent craftsmanship.</p>
+                </div>
+
+            </div>
+
+
+            <! Second card Started..... >
+           <div class="card2">
+
+                <img class="card-image" src="card-image.jpeg">
+
+                <div class="card-body">
+                    <div class="card-title">
+                        Web Developer
+                    </div>
+                </div>
+
+                <div class="card-des">
+                    <p>Saaj Ghor Fashion is a modern Bangladeshi fashion brand dedicated to providing stylish, comfortable, and affordable clothing for people of all ages. Our mission is to bring together quality, elegance, and affordability so that every customer can enjoy fashionable outfits without exceeding their budget. We carefully select our collections to ensure premium fabrics, attractive designs, and excellent craftsmanship.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+    
+    </body>
+
+</html>

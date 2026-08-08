@@ -1,0 +1,176 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-color:#EEE;
+	 font-family: "Montserrat", sans-serif;
+}
+
+.container{
+	width:100%;
+	max-width: 1250px;
+	height: 120px;
+	background-color: #E4F9F5;
+	margin:0 auto;
+	padding:20px;
+}
+
+.profile-image{
+		height: 120px;
+		width: 120px;
+		border: 3px solid white;
+		border-radius: 50%;
+		float: left;
+}
+
+.hed-bio{
+	float: left;
+	padding: 20px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color:#33898D;
+}
+
+.header-contact{
+	float: right;
+	padding: 20px;
+} 
+
+.header-contact a{
+	 text-decoration: none;
+	 color: teal;
+	 font-weight: bold;
+}
+
+.header-contact a:hover{
+	text-decoration: underline;
+	color: tomato;
+}
+
+.div-clear{
+	clear:both;
+}
+
+hr{
+	border: solid black 1px;
+	width: 100%;
+	border-bottom: none;
+}
+
+/*-------------------------
+	  Personal Section Started
+	  -------------------------*/
+
+#personal-info{
+	
+}
+
+.content{
+	margin-bottom: 20px;
+}
+
+.left-div{
+	width: 30%;
+	float: left;
+}
+
+.right-div{
+	width: 70%;
+	float: left;
+}
+
+.common-hr{
+	border: solid black 1px;
+	border-bottom: none;
+	width: 100%;
+	margin: 20px auto;
+}
+
+/*-------------------------------------
+	 Work Experience Section Started
+	  ---------------------------------*/
+	  
+	  
+	  
+	  
+ /*-------------------------------------
+    Key Skills Section Started
+  ---------------------------------*/
+
+.left-div-skill{
+	width: 30%;
+	float: left;
+}
+
+.right-div-skill{
+	width: 70%;
+	float: left;
+}
+
+/*-------------------------------------
+    Education Section Started
+  ---------------------------------*/
+  
+.div-edu{
+	width: 30%;
+	float: left;
+}
+
+.div-edu a{
+	text-decoration: none;
+}
+
+.div-edu a:hover{
+	color: tomato;
+	text-decoration: underline;
+}
+
+
+/*-------------------------------------
+    Reference Section Started
+  ---------------------------------*/
+  
+.right-div-ref2{
+	width: 30%;
+	float: left;
+}
+  
+.right-div-ref2 a{
+	text-decoration: none;
+}
+
+.right-div-ref2 a:hover{
+	color: tomato;
+	text-decoration: underline;
+}
+
+
+
+/*-------------------------------------
+    Footer Section Started
+  ---------------------------------*/
+  
+.footer-style{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+.footer-style a{
+	text-decoration: none;
+	color: white;
+	margin: 20px;
+}
+
+.footer-style a:hover{
+	color: tomato;
+	text-decoration: underline;
+}
+
+.footer-style p{
+	margin-top: 20px;
+}

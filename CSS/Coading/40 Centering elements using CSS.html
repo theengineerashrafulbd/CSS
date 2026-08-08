@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Centering elements using CSS</title>
+
+		<style>
+
+			/*-------------------------
+			   horizontally Centering
+			-----------------------------*/
+
+			.div1-h1{
+				background-color: aqua;
+				text-align: center;
+			}
+
+			.div2{
+				width: 300px;
+				margin: 0 auto;   /*Block elements এর width set করে দিলে text-align:center; কাজ করে না তখন margin: 0 auto; এটা use করলে text center হবে*/
+			}
+
+			.div2{
+				color: white;
+				background-color: blueviolet;
+				width: 80%;
+				height: 400px;
+				margin: 0 auto;     /*width set করার জন্য centering হয় নাই তাই margin: 0 auto; ব্যবহার করায়  centering হয়েছে*/
+				padding: 10px;
+			}
+
+			.sec1-h2{
+				text-shadow: 4px 2px 2px black;
+			}
+
+
+			/*-------------------------
+			    Vertically Centering
+			-----------------------------*/
+
+			.sec2-ver{
+				background-color: green;
+				width: 100%;
+				margin: 0 auto;
+				height: 400px;
+				
+
+				display: flex;    /*Hole div কে Center করা*/
+				justify-content: center;
+
+				align-items: center;    /*Vertically center করতে এটা*/
+			}
+
+			.sec2-div2{
+				background-color: darkcyan;
+				height: 250px;
+				width: 350px;
+				text-align: center;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+	      <!-------------------------
+			   horizontally Centering
+		   ----------------------------->
+
+		<div class="sec1-ver">
+
+			<div class="">
+				<h1 class="div1-h1">Bangladesh</h1>
+			</div> <br>
+
+			<div class="div2">
+				<h2 class="sec1-h2">Sundarbon</h2>
+
+				<p>The Sundarbans is the largest continuous mangrove forest in the world and one of the most beautiful natural treasures of Bangladesh. It is located in the southwestern coastal region of Bangladesh and extends across the delta of the Ganges, Brahmaputra, and Meghna rivers toward the Bay of Bengal. The forest is famous for its network of rivers, canals, muddy islands, and dense mangrove vegetation.</p>		
+			</div> <br> <hr> <br>
+
+
+		</div>
+
+		  <!-------------------------
+			   Vertically Centering
+			----------------------------->
+
+		<div class="sec2-ver">
+
+			<div class="sec2-div2">
+
+				<h1 class="div2-h1">Cox's Bazar</h1>
+
+				<p>Cox’s Bazar is a famous tourist destination in Bangladesh. It is located in the southeastern part of the country. Cox’s Bazar is best known for its long sandy sea beach, which attracts many tourists every year. The natural beauty of the sea, hills, and green surroundings makes it a beautiful place to visit.</p>
+		
+			</div>
+
+		</div>
+	
+	</body>
+</html>

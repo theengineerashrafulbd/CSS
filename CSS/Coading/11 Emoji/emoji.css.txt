@@ -1,0 +1,10 @@
+
+.love{
+		font-size:30px;
+		color:orange;
+}
+
+.ful{
+		font-size:35px;
+		color:red;
+}

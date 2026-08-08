@@ -1,0 +1,80 @@
+<!--selectors and combinators-->
+<!DOCType html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title> Selectors and Combinators </title>
+		
+		<style>
+		
+			h1{
+				background-color:red;
+				text-align:center;
+			}
+			
+			#para1{
+				background-color:green;
+			}
+			
+			.para2{
+				color:green;
+			}
+			
+			.center{
+				text-align:center;
+			}
+			
+			#para3{
+				color:red;
+			}
+			
+			div p{
+				text-align:cenetr;
+				color:red;
+				background-color:yellow;
+			} 
+
+			div > p{
+				text-align:right;
+				color:light-blue;
+			}           
+		
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<h1> This Code for Selectors and Combinators </h1>
+		
+			<p id="para1"> I'm learning CSS for my future </p>
+			<p class="para2"> Allah will help me </p>
+			<p id="para3"> Life is not easy, Do hard work!! </p>
+			<p class="center para2"> <b> Today is Enough!! </b> </p>
+			
+			<hr>
+			
+			<h1> Dicendent Selectors </h1>
+		
+			<div> 
+				<p> I'm learning CSS for my future </p>
+				<p> Allah will help me </p>
+			</div>
+			
+				<p> <b> Today is Enough!! </b> </p>
+				
+			<hr>
+			
+			<h1> Child Selectors </h1>
+		
+			<div>
+				<p> I'm learning CSS for my future </p>
+				<p> Allah will help me </p>
+			</div>
+				<section> <p> Life is not easy, Do hard work!! </p> </section>
+
+		 
+	</body>
+
+</html>

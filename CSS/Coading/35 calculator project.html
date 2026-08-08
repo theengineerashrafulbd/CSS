@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+
+            *{              /* (*{ }) its work hole on body */
+               margin: 0;
+               padding: 0;
+            }
+
+            h1{
+                text-align: center;
+            }
+
+            .card{
+                margin: 0 auto;
+                max-width: 350px;
+                text-align: center;
+                margin-top: 10px;
+                box-shadow: 0 4px 8px 0 rgba(33, 25, 25, 0.2);
+                transition: 0.4s;
+
+                font-size: 0;     /* Its for button perfect sizing */
+            }
+
+            .card:hover{
+                box-shadow: 0 16px 32px 0 rgba(33, 25, 25, 0.2);
+            }
+
+            #result{
+                height: 100px;
+                width: 316px;
+                font-size: 32px;
+                font-weight: bold;
+                text-align: right;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+
+            .btn{
+                 height: 80px;
+                 width: 85px;
+                 font-weight: bold;
+                 font-size: 25px;
+                 background-color: #131313;
+                 color: white;
+            }
+
+            .btn-style{
+                background-color: #6257B3;
+            }
+
+            .btn:hover{
+                background-color: pink;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+            <h1>Calculator</h1>
+
+            <div class="card">
+
+                <div class="calc-head">
+                    <input type="text" id="result" maxlength="20">
+                </div>
+
+                <div class="calc-body">
+                    <input type="button" class="btn" value="C">
+                    <input type="button" class="btn" value="+/-">
+                    <input type="button" class="btn" value="%">
+                    <input type="button" class="btn btn-style" value="/">
+                </div>
+
+                <div>
+                    <input type="button" class="btn" value="7">
+                    <input type="button" class="btn" value="8">
+                    <input type="button" class="btn" value="9">
+                    <input type="button" class="btn btn-style" value="*">
+                </div>
+
+                <div>
+                    <input type="button" class="btn" value="4">
+                    <input type="button" class="btn" value="5">
+                    <input type="button" class="btn" value="6">
+                    <input type="button" class="btn btn-style" value="-">
+                </div>
+
+                <div>
+                     <input type="button" class="btn" value="1">
+                    <input type="button" class="btn" value="2">
+                    <input type="button" class="btn" value="3">
+                    <input type="button" class="btn btn-style" value="+">
+                </div>
+
+                <div>
+                    <input type="button" class="btn" value="0">
+                    <input type="button" class="btn" value=".">
+                    <input type="button" class="btn" value="DEL">
+                    <input type="button" class="btn" style="background-color: orange;" value="=">
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Overflow and Tooltip </title>
+
+    <style>
+
+         .tooltip{
+            position: relative;
+            text-decoration: none;
+        }
+
+        .tooltip:hover{
+            text-decoration: underline;
+            color: red;
+        }
+
+        .tooltip-text{
+            visibility: hidden;
+            width: 150px;
+            color: black;
+            background-color: aqua;
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            left: 30px;
+            top: 40px;
+            z-index: 2;
+        }
+
+        .tooltip:hover .tooltip-text{
+            visibility: visible;
+        }
+
+        .div1{
+            height: 150px;
+            width: 250px;
+            background-color: green;
+            border: 1px solid red;
+            overflow: scroll;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1> ToolTip: </h1>
+
+    <div>
+
+        <a href="#" class="tooltip"> Facebook 
+            <span class="tooltip-text"> Facebook is a social media 
+
+            </span>
+        </a>
+
+    </div>
+
+    <h1> Overflow: </h1>
+    
+    <div class="div1">
+        The overflow property in CSS controls what happens when the content inside an element is larger than its specified width or height. By default, if the content exceeds the size of its container, it may extend outside the element. The overflow property allows you to decide whether the extra content should be visible, hidden, or displayed with scrollbars. It is commonly used in web design to keep layouts clean and prevent content from breaking the page structure. The overflow property works best when the element has a fixed width, height, max-width, or max-height. It can be applied to block-level elements such as <div>, <section>, and <article>. CSS also provides separate properties, overflow-x and overflow-y, to control horizontal and vertical overflow independently.
+    </div>
+
+
+</body>
+</html>
