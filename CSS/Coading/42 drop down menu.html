@@ -1,0 +1,130 @@
+<!DOCType html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Drop Down Menu</title>
+	</head>
+
+	<style>
+
+		/*---------------------------
+		    Main Section stsrted
+		-----------------------------*/
+
+		.nav-bar{
+			padding: 2% 7%;
+			background-color: #40868b;
+			text-align: center;
+		}
+
+		.nav-bar a{
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+			padding: 10px;
+			cursor: pointer;
+		}
+
+		/*---------------------------
+		    Course Section stsrted
+		-----------------------------*/
+
+		.drop-container{
+			display: inline-block;
+			position: relative;
+		}
+
+		.drop-content{
+			position: absolute;
+			background-color: #40868b;
+
+			top: 25px;
+			right: 5px;
+			text-align: left;
+			min-width: 100px;
+
+			display: none;
+		}
+
+		.drop-content a{
+			display: block;
+		}
+
+		.drop-container:hover .drop-content{
+			display: block;
+		}
+
+		.drop-content a:hover{
+			background-color: gray;
+		}
+
+
+		/*---------------------------
+		    Section About Me stsrted
+		-----------------------------*/
+
+		.dropdown-container{
+			display: inline-block;
+			position: relative;
+		}
+
+		.dropdown-content{
+			position: absolute;
+			top: 25px;
+			right: 5px;
+			background-color: #40868b;
+			text-align: left;
+			min-width: 100px;
+			
+			display: none;
+		}
+
+		.dropdown-content a{
+			display: block;
+		}
+
+		.dropdown-container:hover .dropdown-content{
+			display: block;
+		}
+
+		.dropdown-content a:hover{
+			background-color: gray;
+		}
+
+	</style>
+	
+	<body>
+	
+		<div class="nav-bar">
+			<a href="#">Home</a>
+			
+			<div class="drop-container">
+				<a href="#">Course</a>
+				<div class="drop-content">
+					<a href="#">C</a>
+					<a href="#">HTML</a>
+					<a href="#">CSS</a>
+					<a href="#">JavaScript</a>
+					<a href="#">Python</a>
+				</div>
+			</div>
+
+
+			
+			<div class="dropdown-container">
+				<a href="#">Contact Me</a>
+				<div class="dropdown-content">
+					<a href="#">Facebook</a>
+					<a href="#">Email</a>
+				</div>
+			</div>
+
+			<a href="#">About Me</a>
+			<a href="#">Report</a>
+		</div>
+
+	</body>
+
+</html>
