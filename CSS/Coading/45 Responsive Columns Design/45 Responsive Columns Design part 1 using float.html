@@ -1,0 +1,66 @@
+<!DOCType html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Responsive Columns Design using Float </title>
+
+		<style>
+
+			*{
+				box-sizing: border-box;
+			}
+
+			.column{
+				float: left;
+				width: 25%;
+				padding: 10px;
+			}
+
+
+			@media screen and (max-width: 992px) {
+				.column{
+					float: left;
+					width: 50%;
+				}
+			}
+
+			@media screen and (max-width: 600px) {
+				.column{
+					width: 100%;
+				}
+			}
+
+			
+
+		</style>
+
+	</head>
+	
+	<body>
+	
+		<div class="row">
+
+			<div class="column">
+				<h1>HTML</h1>
+				<p>create the structure of a website. It is used to add elements such as headings, paragraphs, images, links, tables, forms, buttons, and lists to a web page. HTML uses tags such as html, head, body, h1, and p to organize content. </p>
+			</div>
+
+			<div class="column">
+				<h1>CSS</h1>
+				<p>CSS (Cascading Style Sheets) is used to design and style HTML webpages. It controls the appearance of elements such as colors, fonts, sizes, spacing, borders, backgrounds, and layouts. </p>
+			</div>
+
+			<div class="column">
+				<h1>JavaScript</h1>
+				<p>JavaScript is a programming language commonly used to make websites interactive and dynamic. With JavaScript, developers can create features such as dropdown menus. </p>
+			</div>
+
+			<div class="column">
+				<h1>Python</h1>
+				<p>Python is a popular, high-level programming language known for its simple and readable syntax. It is used in many areas, including web development, artificial intelligence. </p>
+			</div>
+
+		</div>
+</html>
