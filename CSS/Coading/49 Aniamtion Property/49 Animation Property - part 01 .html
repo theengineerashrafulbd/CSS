@@ -1,0 +1,91 @@
+<!DOCType html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Animation Property</title>
+
+		<style>
+
+			img{
+				max-width: 200px;
+				height: 200px;
+				border: 5px solid black;
+
+				/*Centering for Image*/
+				display: block;
+				margin: 0 auto;
+
+				/*অরিজিনাল Aspect Ratio ঠিক রেখে নির্দিষ্ট বক্স বা ফ্রেমের ভেতরে সুন্দরভাবে ফিট করানো*/
+				object-fit: cover;
+
+				margin-top: 100px;
+
+				/*For use Circle in the image*/
+				border-radius: 50%;
+
+				/*required to apply Animation on the image*/
+				animation-name: img-anim;
+				animation-duration: 3s;
+
+				/*image কে ডানে বামে move করাতে চাই*/
+				/*এটা করতে গেলে hover এবং @key-frames বাদ দিতে হবে না হলে কাজ করবে না*/
+				position: relative;
+			}
+
+
+			/*Animate on image by hover and now it's doesn't work*/
+			img:hover{
+				animation-name: img-anim;
+				animation-duration: 3s;
+
+				/*animation এর last color এ আটকে থাকবে*/
+				animation-fill-mode: forwards;
+			}          
+			
+			
+
+
+			/*Create Animation for apply on my image*/
+			/*without 'from'and 'to' we aslo can use '0%' , '50%' and '100%'*/
+			@keyframes img-anim {
+				from{
+					max-width: 200px;
+					border-color: orange;
+				}
+
+				to{
+					max-width: 300px;
+					border-color: red;
+				}
+			}
+
+			/*
+			@keyframes img-anim {
+				0%{
+					max-width: 200px;
+					border-color: orange;
+				}
+
+				50%{
+					border-color: yellow;
+				}
+
+				100%{
+					max-width: 300px;
+					border-color: red;
+				}
+			}  */
+
+		</style>
+
+	</head>
+	
+	<body>
+	
+		<img src="my pic.jpeg" alt="">
+		
+	</body>
+
+</html>

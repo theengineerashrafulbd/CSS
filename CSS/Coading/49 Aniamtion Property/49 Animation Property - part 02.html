@@ -1,0 +1,76 @@
+<!DOCType html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Animation Property</title>
+
+		<style>
+
+			img{
+				max-width: 200px;
+				height: 200px;
+				border: 5px solid black;
+
+				/*Centering for Image*/
+				display: block;
+				margin: 0 auto;
+
+				/*অরিজিনাল Aspect Ratio ঠিক রেখে নির্দিষ্ট বক্স বা ফ্রেমের ভেতরে সুন্দরভাবে ফিট করানো*/
+				object-fit: cover;
+
+				margin-top: 100px;
+
+				/*For use Circle in the image*/
+				border-radius: 50%;
+
+				/*image কে ডানে বামে move করাতে চাই*/
+				/*এটা করতে গেলে hover এবং @key-frames বাদ দিতে হবে না হলে কাজ করবে না*/
+				position: relative;
+
+				/*required to apply Animation on the image*/
+				animation-name: img-anim;
+				animation-duration: 5s;
+				
+				/*Animation কয়বার use করতে চাই*/
+				animation-iteration-count: 3;
+
+				/*Animation 'in' and 'out' কতো speed এ in and out করবে তার জন্য*/
+				animation-timing-function: linear;
+			}    
+			
+			
+			@keyframes img-anim {
+				0%{
+					top: 0;
+					left: 0;
+				}
+
+				50%{
+					top: 100px;
+					left: 0;
+
+					/*50% হলে কতটা blur হবে*/
+					opacity: 0.5;
+				}
+
+				100%{
+					top: 0px;
+					left: 0;
+				}
+			}
+			
+			
+
+		</style>
+
+	</head>
+	
+	<body>
+	
+		<img src="my pic.jpeg" alt="">
+		
+	</body>
+
+</html>
