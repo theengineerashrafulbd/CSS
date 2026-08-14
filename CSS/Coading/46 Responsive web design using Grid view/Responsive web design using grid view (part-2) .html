@@ -1,0 +1,182 @@
+<!DOCType html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Responsive web design using grid view (part-2) </title>
+
+		<style>
+
+						
+			* {
+				box-sizing: border-box;
+			}
+
+			.header {
+				background-color: #F88452;
+				color: white;
+				padding: 1% 5%;
+				text-align: center;
+			}
+
+			.nav-menu {
+				background-color: #39A2AC;
+				padding: 1% 5%;
+			}
+
+			.nav-menu a {
+				color: white;
+				text-decoration: none;
+				font-size: 1.2rem;
+				padding: 10px;
+				display: block;
+			}
+
+			.nav-menu a:hover {
+				background-color: darkgray;
+			}
+
+			.main {
+				background-color: #42DFD1;
+				padding: 1% 5%;
+			}
+
+			.aside {
+				background-color: #39a4ac;
+				padding: 1% 5%;
+				text-align: center;
+			}
+
+			.footer {
+				background-color: black;
+				color: white;
+				text-align: center;
+				padding: 20px;
+				font-size: 0.8rem;
+			}
+
+
+
+			[class*="col-"] {
+				float: left;
+				padding: 10px;
+			}
+
+			/* Clearfix */
+			.row::after {
+				content: '';
+				clear: both;
+				display: table;
+			}
+
+			
+
+			/* 1. Mobile Styles (Default: max-width: 600px) */
+			@media screen and (max-width: 600px) {
+				[class*="col-"] {
+					width: 100%;
+				}
+
+				.nav-menu a {
+					text-align: center;
+					background-color: aqua;
+					margin: 10px;
+					display: block;
+					font-weight: bold;
+					color: black;
+				}
+
+				h1, h2 {
+					text-align: center;
+				}
+			}
+
+			/* 2. Tablet Styles (min-width: 600px) - আগে থাকবে */
+			@media screen and (min-width: 600px) {
+				.col-s-1  { width: 8.33%; }
+				.col-s-2  { width: 16.66%; }
+				.col-s-3  { width: 25%; }
+				.col-s-4  { width: 33.33%; }
+				.col-s-5  { width: 41.66%; }
+				.col-s-6  { width: 50%; }
+				.col-s-7  { width: 58.33%; }
+				.col-s-8  { width: 66.66%; }
+				.col-s-9  { width: 75%; }
+				.col-s-10 { width: 83.33%; }
+				.col-s-11 { width: 91.66%; }
+				.col-s-12 { width: 100%; }
+			}
+
+			/* 3. Desktop Styles (min-width: 768px) - সবার নিচে থাকবে */
+			@media screen and (min-width: 768px) {
+				.col-1  { width: 8.33%; }
+				.col-2  { width: 16.66%; }
+				.col-3  { width: 25%; }
+				.col-4  { width: 33.33%; }
+				.col-5  { width: 41.66%; }
+				.col-6  { width: 50%; }
+				.col-7  { width: 58.33%; }
+				.col-8  { width: 66.66%; }
+				.col-9  { width: 75%; }
+				.col-10 { width: 83.33%; }
+				.col-11 { width: 91.66%; }
+				.col-12 { width: 100%; }
+			}
+
+
+		</style>
+
+	</head>
+	
+	<body>
+	
+		<div class="header">
+			<h1>Mohammad Ashraful Islam</h1>
+		</div>
+
+
+		<div class="row">
+
+			<div class="nav-menu col-2 col-s-3">
+				<a href="#">Home</a>
+				<a href="#">Tutorial</a>
+				<a href="#">Contact</a>
+			</div>
+
+
+			<div class="main col-7 col-s-9">
+				<h1>I'm a Computer Engineer</h1>
+				<p>I am a Computer Engineer with a strong passion for technology, programming, and software development. I am interested in understanding how computers, websites, applications, and digital systems work. As a computer engineering student, I am continuously developing my knowledge and practical skills in different areas of technology. I have a particular interest in web development, programming, software design, and problem-solving. 
+					
+				<p>I am learning technologies such as HTML, CSS, JavaScript, Python, and C++ to build a strong foundation in programming and development. I believe that becoming a good computer engineer requires more than just learning programming languages. It requires creativity, logical thinking, patience, continuous learning, and the ability to solve problems effectively. I enjoy creating websites and experimenting with different coding techniques to understand how modern web applications are developed. I also like learning new technologies and exploring how they can be used to make people's lives easier. Every coding project gives me an opportunity to learn something new and improve my skills.</p></p>
+			</div>
+
+
+			<div class="aside col-3 col-s-12">
+				<div class="div1">
+					<h2>What I Love</h2>
+					<p>I love gardening, farming, planting trees, reading books and writing is also my favorite hobby</p>
+				</div>
+
+				<div class="div2">
+					<h2>What I Do</h2>
+					<p>i am a computer engineer so i develope websites and software</p>
+				</div>
+
+				<div class="div3">
+					<h2>Your benifits</h2>
+					<p>If you follow me you will be benefited about to create a strong ming, in CSE department etc.</p>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="footer">
+			&copy; Study with ASHRAFUL ISLAM. Developed by Ashraful Islam
+		</div>
+		
+	</body>
+
+</html>

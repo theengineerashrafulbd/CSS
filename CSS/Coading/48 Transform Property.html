@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transform Property</title>
+
+        <style>
+            #div1 {
+                height: 200px;
+                width: 200px;
+                background-color: black;
+                color: white;
+
+                /*margin used for centering the div1*/
+                margin: 0 auto;
+                margin-top: 200px;
+
+                /* Flexbox দিয়ে লেখা একদম মাঝখানে আনা */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                transition: 3s;
+            }
+
+            #div1:hover {
+                /* transform: rotate(45deg); */
+
+                /* transform: scale(1.2);  */
+
+                /* transform: skew(-45deg); */
+
+                /* transform: translate(150px, 250px); */
+
+                transform: scale(2) rotate(360deg);
+            }
+
+        </style>
+        
+    </head>
+
+    <body>
+
+        <div id="div1">
+            <h1>ASHRAFUL</h1>
+        </div>
+
+    </body>
+
+</html>
