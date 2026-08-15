@@ -1,0 +1,74 @@
+<!DOCType html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Transition and Transformation</title>
+
+		<style>
+
+			.main{
+				background-color: tomato;
+				height: 300px;
+				width: 300px;
+
+				/*Div Centering*/
+				margin: 0 auto;
+
+				/*Text Centering in a Div*/
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				/*Transition Apply in diffrent way*/
+				transition-property: width, height, transform;
+				transition-duration: 3s, 4s, 3s;
+				transition-delay: 0.5s, 0.5s, 0.5s;
+				transition-timing-function: initial, linear, ease-in-out;
+
+				transform: 3s;
+
+				/*All Transition apply in one Tag*/
+				/*আমি দুইটাই একসাথে use করেছি*/
+				/*
+				transition: width 3s initial 0.5s transform 3s, height 4s linear 0.5s transform 3s;
+				*/
+			}
+
+			.main:hover{
+				width: 400px;
+
+				height: 500px;
+
+				transform: rotate(360deg);
+			}
+
+
+			h1{
+				font-size: 2.5rem;
+				color: white;
+
+				/*Transition Apply on h1*/
+				transition: font-size 3s;
+			}
+
+			h1:hover{
+				font-size: 4rem;
+			}
+
+
+
+		</style>
+
+	</head>
+	
+	<body>
+	
+		<div class="main">
+			<h1>Bangladesh</h1>
+		</div>
+		
+	</body>
+
+</html>
