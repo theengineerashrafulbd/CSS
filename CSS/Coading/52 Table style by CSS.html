@@ -1,0 +1,149 @@
+<!DOCType html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Table Style</title>
+
+		<style>
+
+			*{
+				box-sizing: border-box;
+			}
+
+			table{
+				border: 1px solid black;
+
+				/*For remove double border*/
+				border-collapse: collapse;
+
+				width: 100%;
+			}
+
+			th, td{
+				border: 1px solid black;
+				padding: 5px;
+			}
+
+			th{
+				background-color: darkgreen;
+				color: white;
+				height: 30px;
+
+				text-align: center;
+				
+
+				/*For Vertically centering*/
+				/*
+				vertical-align: middle;
+				*/
+			}
+
+
+			tr:nth-child(even){
+				background-color: gray;
+			}
+
+			tr:nth-child(odd){
+				background-color: gold;
+			}
+
+			tr:hover{
+				background-color: tomato;
+			}
+
+
+
+			/* 1, 2 এবং 4 নম্বর কলামের (ID, Name, Phone) টেক্সট সেন্টারে করার জন্য */
+			td:nth-child(1),
+			td:nth-child(2),
+			td:nth-child(4) {
+    			text-align: center;
+			}
+
+			/* Bio কলামের (3 নম্বর কলাম) টেক্সট বামে রাখার জন্য (ইচ্ছা হলে) */
+			td:nth-child(3) {
+				text-align: left;
+			}
+
+
+			/* Name কলামের (২য় কলাম) প্রস্থ বাড়ানোর জন্য */
+			th:nth-child(2),
+			td:nth-child(2) {
+				width: 10%;
+			}
+
+		</style>
+
+	</head>
+	
+	<body>
+	
+		<div class="div">
+
+			<table>
+				<caption>
+					Student Details
+				</caption>
+
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Bio</th>
+					<th>Phone</th>
+				</tr>
+
+				<tr>
+					<td>101</td>
+					<td>Sadia Mim</td>
+					<td>She is a Computer science and Engineering Student and very brillint. She is enovative minded</td>
+					<td>0191122****</td>
+				</tr>
+
+				<tr>
+					<td>102</td>
+					<td>Nodi Islam</td>
+					<td>Nodi is an aspiring backend developer with a deep passion for distributed systems and cloud architecture. When he is not optimizing database queries in PostgreSQL, he contributes to open-source Python projects and competes in weekend hackathons."</td>
+					<td>018********</td>
+				</tr>
+
+				
+				<tr>
+					<td>103</td>
+					<td>Nilima Begum</td>
+					<td>Nilima focuses on machine learning and predictive analytics, combining statistical modeling with real-world data pipelines. She is currently researching natural language processing techniques and spends her spare time tutoring introductory statistics."</td>
+					<td>0170000****</td>
+				</tr>
+
+				
+				<tr>
+					<td>104</td>
+					<td>Poysa</td>
+					<td>Sophia is dedicated to network security and ethical hacking. She regularly participates in Capture the Flag (CTF) competitions, researches modern cryptographic protocols, and aims to work as a security auditor after graduation."</td>
+					<td>019********</td>
+				</tr>
+
+				
+				<tr>
+					<td>105</td>
+					<td>Jofura</td>
+					<td>Zainab works at the intersection of embedded systems and artificial intelligence. She specializes in C++ programming for autonomous micro-drones and serves as the lead software engineer for her campus robotics team."</td>
+					<td>0154560****</td>
+				</tr>
+
+				
+				<tr>
+					<td>106</td>
+					<td>Mrs Kumari</td>
+					<td>Liam blends visual design with front-end code to create fluid user experiences. Obsessed with micro-interactions and accessibility, he spends his time prototyping mobile apps in Figma and implementing them with Tailwind CSS."</td>
+					<td>0141111****</td>
+				</tr>
+					
+			</table>
+
+		</div>
+		
+	</body>
+
+</html>
