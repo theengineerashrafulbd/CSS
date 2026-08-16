@@ -1,0 +1,81 @@
+<!DOCType html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CSS Form part 01</title>
+
+		<style>
+
+			*{
+				/*এটা করলে screen এর total width এর মধ্যে margin, padding সব নিবে*/
+				box-sizing: border-box;
+			}
+
+			input[type=text]{
+				width: 100%;
+				padding: 10px 20px;
+				font-size: 1rem;
+				background-color: #CFE6F0;
+
+				/*First value=up-down and second value=right-left*/
+				margin: 20px 0;
+
+				border: 3px solid salmon;
+				border-radius: 10px;
+
+
+				/*border এর চার পাশে border না রেখে আলাদা আলাদা side এ রাখতে চাইলে*/
+				/*
+				border: none;
+				border-bottom: 3px solid salmon;
+				*/
+			}
+
+
+			#search{
+				background-image: url(search.png);
+				background-repeat: no-repeat;
+
+				/*search text টা একটু সরিয়ে নিলাম*/
+				font-size: 1rem;
+				padding: 15px 40px;
+
+				background-position: 8px 15px;
+
+				background-color: white;
+
+				/*Apply Animation*/
+				width: 250px;
+				transition: width 0.7s ease-in-out;
+			}
+
+			#search:focus{
+				/*work it after click*/
+				background-color: aliceblue;
+				width: 90%;
+			}
+			
+
+		</style>
+
+	</head>
+	
+	<body>
+	
+		<form action="">
+
+			<input type="text" name="search" id="search" placeholder="Search"> <br>
+
+			<label for="fname">First Name</label>
+			<input type="text" name="fname" id="fname">
+
+			<label for="lname">Last Name</label>
+			<input type="text" name="lname" id="lname">
+
+		</form>
+		
+	</body>
+
+</html>

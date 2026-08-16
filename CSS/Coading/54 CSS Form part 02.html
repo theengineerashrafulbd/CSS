@@ -1,0 +1,71 @@
+<!DOCType html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CSS Form part 02</title>
+
+		<style>
+
+			select{
+				width: 25%;
+				padding: 10px;
+
+				background-color: cadetblue;
+
+				border: none;
+				border-radius: 5px;
+			}
+
+			textarea{
+				resize: none;
+
+				width: 50%;
+				padding: 20px;
+				border: 3px solid gray;
+				border-radius: 15px;
+			}
+
+			input[type="button"], [type="reset"]{
+				width: 30%;
+				height: 30px;
+
+				border: none;
+				border-radius: 5px;
+				background-color: indianred;
+				color: white;
+
+				cursor: pointer;
+			}
+
+		</style>
+
+	</head>
+	
+	<body>
+	
+		<form action="">
+
+			<select name="subjects-name" id="subjects">
+				<option value="c">C Programm</option>
+				<option value="c++">C++</option>
+				<option value="html">HTML</option>
+				<option value="css">CSS</option>
+				<option value="js">JavaScript</option>
+				<option value="py">Puthon</option>
+			</select> <br> <br>
+
+			<textarea name="" id="" cols="30" rows="10">
+				Write your comments here
+			</textarea> <br> <br>
+
+			<input type="button" value="Submit">
+
+			<input type="reset" value="Reset">
+
+		</form>
+		
+	</body>
+
+</html>
